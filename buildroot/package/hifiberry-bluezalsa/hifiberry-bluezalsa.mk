@@ -31,7 +31,6 @@ HIFIBERRY_BLUEZALSA_CONF_OPTS = \
 	--disable-msbc \
 	--enable-aac \
 	--enable-mp3lame \
-	--enable-openaptx \
 
 # Enable AAC
 HIFIBERRY_BLUEZALSA_DEPENDENCIES += fdk-aac
@@ -39,6 +38,9 @@ HIFIBERRY_BLUEZALSA_CONF_OPTS += --enable-aac
 
 #HIFIBERRY_BLUEZALSA_DEPENDENCIES += libbsd ncurses
 #HIFIBERRY_BLUEZALSA_CONF_OPTS += --enable-hcitop
+
+HIFIBERRY_BLUEZALSA_DEPENDENCIES += openaptx
+HIFIBERRY_BLUEZALSA_CONF_OPTS += --enable-openaptx --enable-aptx --enable-aptx-hd
 
 HIFIBERRY_BLUEZALSA_DEPENDENCIES += readline
 HIFIBERRY_BLUEZALSA_CONF_OPTS += --enable-rfcomm
